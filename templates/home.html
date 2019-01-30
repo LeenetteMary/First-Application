@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+        <div class="jumbotron text-center">
+            <h1>Hello Welcome to my first FlaskApp</h1>
+            <p class="lead">This application is my first python blog built on the python flask framework from Scratch</p>
+        </div>
+
+{% for post in posts %}
+    <h1>{{ post.Title }}</h1>
+    <p> By {{ post.Author }} about {{ post.Content }}</p>
+{% endfor %} 
+ 
+{% endblock %} 

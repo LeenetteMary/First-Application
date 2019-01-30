@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>Recent Posts</h1>
+    <ul class="list-group">
+    {% for article in articles %}
+        <li class="list-group-item">
+            <h1>{{ article.Title }}</h1>
+            <p> By {{ article.Author }} about {{ article.Content }}</p>
+        </li> 
+    {% endfor %}  
+</ul>
+{% endblock %}
